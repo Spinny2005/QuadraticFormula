@@ -33,13 +33,13 @@ while True:
         else:
             negativeValue = (abs((b**2) - 4 * a * c))
             solvedSqrt = "i*sqrt(" + str(negativeValue) + ")"
-        
+        print(solvedSqrt)
 
         if (negativeInSqrt != True):
             posAnswer = -b + solvedSqrt
-            print(posAnswer)
+            print(posAnswer/(2 * a))
             negAnswer = -b - solvedSqrt
-            print(negAnswer)
+            print(negAnswer/(2 * a))
         else:
             positiveNumerator = "-" + str(b) + " + " + str(solvedSqrt)
             print("(" + str(positiveNumerator) + ")/" + str(2 * a))
