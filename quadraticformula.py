@@ -33,18 +33,17 @@ while True:
         else:
             negativeValue = (abs((b**2) - 4 * a * c))
             solvedSqrt = "i*sqrt(" + str(negativeValue) + ")"
-        print(solvedSqrt)
 
         if (negativeInSqrt != True):
             posAnswer = -b + solvedSqrt
-            print(posAnswer/(2 * a))
+            print("Plus Sqrt: " + str(posAnswer/(2 * a)))
             negAnswer = -b - solvedSqrt
-            print(negAnswer/(2 * a))
+            print("Minus Sqrt: " + str(negAnswer/(2 * a)))
         else:
             positiveNumerator = "-" + str(b) + " + " + str(solvedSqrt)
-            print("(" + str(positiveNumerator) + ")/" + str(2 * a))
+            print("Plus Sqrt: (" + str(positiveNumerator) + ")/" + str(2 * a))
             negativeNumerator = "-" + str(b) + " - " + str(solvedSqrt)
-            print("(" + str(negativeNumerator) + ")/" + str(2 * a))
+            print("Minus Sqrt: (" + str(negativeNumerator) + ")/" + str(2 * a))
 
     else:
         print("Please enter valid")
